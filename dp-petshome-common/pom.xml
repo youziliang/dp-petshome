@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.petshome</groupId>
+		<artifactId>dp-petshome</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<groupId>com.petshome.common</groupId>
+	<artifactId>dp-petshome-common</artifactId>
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
+	
+		<!-- 芝麻信用SDK -->
+		<dependency>
+			<groupId>com.antgroup.zmxy.openplatform.api</groupId>
+			<artifactId>zmxy-sdk-java</artifactId>
+			<!-- version>20161107130810</version -->
+			<version>20161222174306</version>
+		</dependency>
+
+		<!-- java mail -->
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>${javamail.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>dp-pesthome-common</finalName>
+	</build>
+</project>
