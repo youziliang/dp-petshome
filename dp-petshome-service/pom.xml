@@ -85,9 +85,11 @@
 			<artifactId>json-lib-ext-spring</artifactId>
 			<version>${json-lib-ext-spring.version}</version>
 		</dependency>
-
 	</dependencies>
+
 	<build>
 		<finalName>dp-petshome-service</finalName>
 	</build>
+
+
 </project>

@@ -20,6 +20,11 @@
 	<!-- 持久层相关依赖 -->
 	<dependencies>
 		<dependency>
+			<groupId>com.petshome.common</groupId>
+			<artifactId>dp-petshome-common</artifactId>
+			<version>${petshome.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
 			<version>${mybatis.version}</version>
@@ -60,6 +65,18 @@
 
 	<build>
 		<finalName>dp-petshome-persistence</finalName>
+
+		<plugins>
+			<plugin>
+				<groupId>org.mybatis.generator</groupId>
+				<artifactId>mybatis-generator-maven-plugin</artifactId>
+				<version>${mybatis-generator.version}</version>
+				<configuration>
+					<verbose>true</verbose>
+					<overwrite>true</overwrite>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 
 </project>
