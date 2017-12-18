@@ -11,8 +11,6 @@
 		<module>dp-petshome-common</module>
 		<module>dp-petshome-persistence</module>
 		<module>dp-petshome-service</module>
-		<module>dp-petshome-api</module>
-		<module>dp-petshome-web</module>
 	</modules>
 
 	<!-- 版本管理 -->
