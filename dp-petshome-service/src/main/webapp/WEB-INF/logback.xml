@@ -74,8 +74,8 @@
 		<appender-ref ref="Error" />
 	</appender>
 
-	<root level="DEBUG">
-		<!--<appender-ref ref="STDOUT" /> -->
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
 		<appender-ref ref="info_async" />
 		<appender-ref ref="error_async" />
 	</root>
