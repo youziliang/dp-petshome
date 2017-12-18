@@ -23,13 +23,6 @@
 			<version>${petshome.version}</version>
 		</dependency>
 
-		<!--HikariCP 号称为性能最好的Java数据库连接池 -->
-		<dependency>
-			<groupId>com.zaxxer</groupId>
-			<artifactId>HikariCP</artifactId>
-			<version>${hikari.version}</version>
-		</dependency>
-
 		<!-- Dubbo Provider -->
 		<dependency>
 			<groupId>com.alibaba</groupId>

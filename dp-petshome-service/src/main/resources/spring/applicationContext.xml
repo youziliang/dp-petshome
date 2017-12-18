@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:mvc="http://www.springframework.org/schema/mvc" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 					    http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
 					    http://www.springframework.org/schema/context 
@@ -23,15 +22,15 @@
 	<!-- springMVC 注解配置 -->
 	<mvc:annotation-driven />
 
-	<!-- <bean
+	<bean
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="locations">
 			<array>
 				<value>classpath*:jdbc.properties</value>
 			</array>
 		</property>
-	</bean> -->
+	</bean>
 
-	<!-- <import resource="classpath*:spring/datasource-config.xml" /> -->
+	<import resource="classpath*:spring/datasource-config.xml" />
 	<import resource="classpath*:spring/dubbo-provider.xml" />
 </beans>
