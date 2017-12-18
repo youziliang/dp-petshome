@@ -13,7 +13,7 @@
 		<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
 		<!-- 去除字段注释 -->
 		<commentGenerator>
-			<property name="suppressAllComments" value="false" />
+			<property name="suppressAllComments" value="true" />
 		</commentGenerator>
 
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/petshome" userId="root" password="111111">
@@ -42,7 +42,7 @@
 
 
 		<!-- TODO 数据库表 -->
-		<table tableName="t_user_and_user" domainObjectName="UserAndUser" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" enableDeleteByPrimaryKey="false">
+		<table tableName="t_test" domainObjectName="Test" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" enableDeleteByPrimaryKey="false">
 			<!-- useActualColumnNames属性是为了使生成的model字段与数据库的字段大小写不一致 -->
 			<property name="useActualColumnNames" value="false" />
 			<!-- <columnOverride column="LONG_VARCHAR_FIELD" jdbcType="VARCHAR" /> -->
