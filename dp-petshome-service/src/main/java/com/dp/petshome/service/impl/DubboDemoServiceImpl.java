@@ -1,19 +1,40 @@
 package com.dp.petshome.service.impl;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.dp.petshome.persistence.dao.UserMapper;
+import com.dp.petshome.persistence.model.User;
 import com.dp.petshome.service.DubboDemoService;
 
 @Service
 public class DubboDemoServiceImpl implements DubboDemoService {
 
-	private static final  Logger log  =  LoggerFactory.getLogger(DubboDemoServiceImpl.class );
-	
+	@Autowired
+	private UserMapper userMapper;
+
+	private static final Logger log = LoggerFactory.getLogger(DubboDemoServiceImpl.class);
+
 	@Override
-	public String sayHello(String name) {
-		log.info("log --> Provider的Info日志测试");
-	        return "Hello " + name;
+	public Boolean insertUser(User user) {
+		log.info("Provider --> 创建User对象");
+		int isSuccess = userMapper.insertSelective(user);
+		if(1==isSuccess) {
+			return true;
+		}else {
+			return false;
+		}
 	}
+
+	@Override
+	public List<User> selectUsers() {
+		log.info("Provider --> 查询User对象");
+		List<User> userList = userMapper.selectUsers();
+		return userList;
+	}
+
 }
