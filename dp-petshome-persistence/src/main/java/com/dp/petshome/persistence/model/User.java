@@ -1,34 +1,37 @@
 package com.dp.petshome.persistence.model;
 
-public class User {
-	
-    private Integer id;
+import java.io.Serializable;
 
-    private String name;
+public class User implements Serializable {
+	private Integer id;
 
-    private Long asset;
+	private String name;
 
-    public Integer getId() {
-        return id;
-    }
+	private Long asset;
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+	private static final long serialVersionUID = 1L;
 
-    public String getName() {
-        return name;
-    }
+	public Integer getId() {
+		return id;
+	}
 
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
-    }
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-    public Long getAsset() {
-        return asset;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public void setAsset(Long asset) {
-        this.asset = asset;
-    }
+	public void setName(String name) {
+		this.name = name == null ? null : name.trim();
+	}
+
+	public Long getAsset() {
+		return asset;
+	}
+
+	public void setAsset(Long asset) {
+		this.asset = asset;
+	}
 }
