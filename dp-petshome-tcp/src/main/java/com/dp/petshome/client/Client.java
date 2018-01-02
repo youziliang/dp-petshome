@@ -30,10 +30,10 @@ public class Client {
 									   .sync()
 									   .channel();
 			// 控制台输入
-			BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 			for (;;) {
-				String line = in.readLine();
+				String line = reader.readLine();
 				if (line == null) {
 					continue;
 				}

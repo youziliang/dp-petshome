@@ -30,10 +30,10 @@ public class Server {
 					 .childHandler(new ServerChannelInitializer());
 
 			// 绑定端口，同步等待成功
-			ChannelFuture f = bootstrap.bind(port).sync();
+			ChannelFuture future = bootstrap.bind(port).sync();
 			
 			// 等待服务器监听端口关闭
-			f.channel().closeFuture().sync();
+			future.channel().closeFuture().sync();
 			
 		} catch (Exception e) {
 			e.printStackTrace();
