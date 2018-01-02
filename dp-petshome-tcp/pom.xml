@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.petshome</groupId>
+		<artifactId>dp-petshome</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<groupId>com.petshome.tcp</groupId>
+	<artifactId>dp-petshome-tcp</artifactId>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.petshome.persistence</groupId>
+			<artifactId>dp-petshome-persistence</artifactId>
+			<version>${petshome.version}</version>
+		</dependency>
+
+		<!-- Netty -->
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.1.19.Final</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>dp-petshome-tcp</finalName>
+	</build>
+
+</project>
