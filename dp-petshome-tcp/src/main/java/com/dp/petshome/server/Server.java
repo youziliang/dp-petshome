@@ -13,7 +13,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 public class Server {
 
 	public static void main(String[] args) throws Exception {
-		int port = 10101;
+		int port = 12345;
 		new Server().bind(port);
 	}
 

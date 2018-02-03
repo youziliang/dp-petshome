@@ -15,7 +15,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 public class Client {
 
 	public static String host = "192.168.1.111"; // 服务器IP地址
-	public static int port = 10101; // 服务器端口
+	public static int port = 12345; // 服务器端口
 
 	public static void main(String[] args) throws Exception {
 		EventLoopGroup group = new NioEventLoopGroup();
